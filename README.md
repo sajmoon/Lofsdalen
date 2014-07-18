@@ -6,3 +6,6 @@ cd phonegap
 phonegap serve
 
 Connector Phonegap Developer App to the address displayed.
+
+# Run local dev env
+sencha fs web -p <PORT> start
