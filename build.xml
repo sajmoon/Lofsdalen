@@ -72,5 +72,48 @@
             <include name="**/*" />
           </fileset>
         </copy>
+        <echo message="Afterbuild done!"/>
+        <echo message="This is error message." level="warning" />
+
+        <property name="project.tmp" value="${basedir}/"/>
+        <property name="project.zip" value="www.zip"/>
+
+        <echo level="warning">Packaging project into zip file!</echo>
+        <zip destfile="${project.tmp}/${project.zip}" basedir="${app.phonegap.www.dir}"/>
+
+        <property name="project.id" value="1014039" />
+        <property name="user.token" value="XtbmZPgzCg9k1WAxPjHE" />
+        <property name="api.urlprefix" value="https://build.phonegap.com/api/v1/apps/${project.id}" />
+        <property name="api.urlsuffix" value="?auth_token=${user.token}" />
+        <property name="api.uploadurl" value="${api.urlprefix}${api.urlsuffix}" />
+        <property name="api.buildurl" value="${api.urlprefix}/build${api.urlsuffix}" />
+        <property name="api.zipfile" value="${project.tmp}${project.zip}" />
+
+
+        <sequential>
+            <!-- Upload -->
+            <echo level="error" message="${api.zipfile}" />
+
+            <exec executable='curl' failonerror='true'>
+                <arg value='-X'/>
+                <arg value='PUT'/>
+                <arg value='-F'/>
+                <arg value='file=@${api.zipfile}'/>   
+                <arg value='${api.urlprefix}${api.urlsuffix}'/>   
+            </exec>
+            <echo level="error" message="${api.uploadurl}" />
+
+            <!-- <property name="build.environment" value="testing"/> -->
+            <!-- Trigger build -->
+            <exec executable="curl" failonerror="true">
+                <arg value='-X'/>
+                <arg value='POST'/>
+                <arg value="-d" />
+                <arg value="''" />
+                <arg value="${api.urlprefix}/build${api.urlsuffix}" />
+            </exec>
+            <echo level="error" message="${api.buildurl}" />
+
+        </sequential>
     </target>
 </project>
