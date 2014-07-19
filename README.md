@@ -3,7 +3,7 @@ sencha app build testing
 or:
 sencha app build
 
-PS! This should vopy webfiles to /phonegap/wwww
+PS! This should copy webfiles to /phonegap/wwww
 
 # Check it out on a local phone.
 cd phonegap
@@ -13,3 +13,7 @@ Connector Phonegap Developer App to the address displayed.
 
 # Run local dev env
 sencha fs web -p <PORT> start
+
+
+#Deploy
+sencha app build production
