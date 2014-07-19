@@ -1,7 +1,11 @@
 # Building the app
-sencha build testing
+sencha app build testing
+or:
+sencha app build
 
-Make sure phonegap/www is a symlink to build/testing (ln -s build/testing phonegap/www)
+PS! This should vopy webfiles to /phonegap/wwww
+
+# Check it out on a local phone.
 cd phonegap
 phonegap serve
 
