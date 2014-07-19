@@ -67,6 +67,8 @@
 
     <!-- Copy all web files to phonegap dir -->
     <target name="-after-build">
+        <delete dir="{app.phonegap.www.dir}"/>
+
         <copy todir="${app.phonegap.www.dir}" overwrite="true">
           <fileset dir="${build.dir}">
             <include name="**/*" />
