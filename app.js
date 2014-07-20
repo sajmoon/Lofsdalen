@@ -15,7 +15,7 @@ Ext.application({
 
     requires: [
         'Ext.MessageBox',
-        'Lofsdalen.utils.Functions',
+        'Lofsdalen.utils.Functions'
     ],
 
     controllers: [

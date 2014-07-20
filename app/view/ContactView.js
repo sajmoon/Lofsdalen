@@ -3,7 +3,7 @@ Ext.define('Lofsdalen.view.ContactView', {
     xtype: 'contactview',
 
     requires: [
-        'Ext.form.FieldSet',
+        'Ext.form.FieldSet'
     ],
 
     config: {

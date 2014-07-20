@@ -6,7 +6,7 @@ Ext.define('Lofsdalen.view.SettingsView', {
         'Ext.field.Toggle',
         'Ext.field.Select',
         'Ext.field.Text',
-        'Ext.Button',
+        'Ext.Button'
     ],
 
     config: {
