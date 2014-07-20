@@ -14,7 +14,12 @@ Ext.application({
     name: 'Lofsdalen',
 
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox',
+        'Lofsdalen.utils.Functions',
+    ],
+
+    controllers: [
+        'Main'
     ],
 
     views: [
@@ -45,6 +50,7 @@ Ext.application({
 
         // Initialize the main view
         Ext.Viewport.add(Ext.create('Lofsdalen.view.Main'));
+        Ext.Viewport.add(Ext.create('Lofsdalen.view.Settings'));
     },
 
     onUpdated: function() {

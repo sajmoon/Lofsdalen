@@ -38,6 +38,15 @@
     },
     "index.html.tpl.merge": {
       "5c2622f8945945e183e62230dbbcdc870ee41e31": "eJydVU1vGjEQvfMrJhvlEnVZogoppYAq5UONlKqVQg49eu0BHLz2yh4gKMp/z3gXkuVDRakPyGY8857fjN72T65/X43+/rmBn6Nf98NWf0qFgUJYPcZAgyQBI+xkkKBNHx+SGEehhi3g1S+QBMip8AH55uPoNr1M1iHSZHD4YkWBr/2sPtWRQCuDQKsSBwnhM2UyhHVWtbLz84/DOdw8i6LkBDcGYUFbTVoYME4obSd8VloKcr7dzLkj0AE8SlcUaBUqIAczxBJoygERoOBCBdfhbelC0Hmk5KD0bqEVctlAwhKMEVUu5KxZfDnVkQ5N0TNEcHMvkWt6hEDaGMgxEosEGXfsPGMijLUPBKQLbJTK3vdR8y+QO7WCl48LMYB6MqUeXHQ6Z9+3IpHWxLu5Val0xvkenF58u+xed95vvbbet6eiLO9rye42iu0gsQwsrbM9EHlwZk64jUeu7EF3l0Uh/ETbtAqmF93yeSeJ+5sKoydcVqIl9NvxpVY0PfS6zbu/dnZLpkvMZ5qrxgZGwmmcMWa9/8JjiWruRf3kTrsbjt3WzL7eSVaduWk7juOIR2E0T2KNY7RF0eB1rEVDnreXY22/rdY2C6VDacQqkoyYaW6cnH1W4tx5hT71TGoeuEt77a27z/LBXmjd2f3irhRS0ypqfnlQiB8b+Bmuxp57Gw71dluVztmOTLtIW8HXrVP3SPI/UuPc/h9wvetnlRmujfEkTWHEXhEbxi5i3BKKObtGjuxdJVuaJSGpspQHtGy7cMX+JmzlbvlcGwUrdqOoloki8cRBmm5cV3oda6hBUmjpXeVPPmn68JNYiPpaAsHLQdIOFUzGBbNGUqZwwexKtlZqP7F38zOqNP44ZPXXoR+tbI2s9KKCPdDEhu3Ha1wo/n7qv/W2n9WITICtdNh6Az5F4Bg\u003d"
+    },
+    "{formFileName}.js.tpl.merge": {
+      "9502f3b14cc89647cc0b6d8dd845342687ee4777": "eJyFUk1vgzAMvfdXWJWqgIqybkegu/U6TdoRcaBt0kYKAYHpOiH++5zwobIizYfE8cuzXxwf7sjPQiojPNZmZfmR5aLjNyW+eWuszwJoV0Am7ijMOQR2IIosqpx/ZkZoFjj0jj+lILB1TjdE3XIqjFSXcEhjDRVqd3moMAGTo1DkdQhJu5lC1m6ZbkTNpRL6XMMePNmYE6rCkOdi/kOV0UgreLesgkogcZI0gDKr0PJ7Eq9LrdBjAfMDUBTeRbTF/S2uhbngNYLtVi1l72VVIInnCIlKx4Qh86NFAinhZVNfvRZsC0KQyY5k9T2UySv5OjsKbQ9vKXQLabrVU4iyNpWxWzQHO9+bde4h3aaLsdS2R/t1D67fZ9znF/eKnz9vtGkU3CS4pAu3hvex1jkdmwsO4heS9Z+SsdKxQSzMQhGkoSX8qznmChfwRhHq5rPK/yiYTunorPo4fcYvHPjIwg\u003d\u003d"
+    },
+    "{modelFileName}.js.tpl.merge": {
+      "b440abe61f1cfb3bbc31c9554696b4c7e9e2c329": "eJxtUsFugzAMvfMVVqUqtEXQXaF0h2nX/QDikIJpo6UBkdAxRfn3ObCiVasPsbH9Hi923kcT19gIhSGz17ZG+cGvqDteoYutotixCGwAZDgaVHUKzJ64xjfJtabiVJqOqlWNOKe/3d4agbLWKRR2veS83bgcUMdzGXIIm0FVRrSKoim3+UOykLU9hDfeQ4+GMEUZQcd74/EzKNadFCZkEdtEICi9z8gd5q5YojqbSwa7nXjGPsvqoSHcBChEeSdM2SZ7CiAlcTfoS2jBjyqFptiTLPPdTfFLCe4J0gX/UkQ09Mq77LHoNuHDsP7Qrd3BdNKPJV/NxdXxAXsXxZY9zsKY9d4xcLYYhapxhDyHsWoHZeAVGAPqiVjpDgn94BjYNSRbOEmuPkHSSwHTktJ6qBCu2J9xWrwUFa3iKxk09oC1oI9tQhoXRWUw391P5AeOxqsQ"
+    },
+    "{controllerFileName}.js.tpl.merge": {
+      "7cd8d1cf12515ca525732931d6b775e3f7924ad9": "eJx1j0EKwyAQRfeeYnYmIMk+XZXSbe8gOjaCGSWxbSB49xoTQij0L8ZR3p8/3ufYaDSWsOKL8hRH7xyODzngFKTC1Py8Ji5gYZCFc0TSHfB7niFDaG4HyEUhSsl2Y5/dblo1opnO9wNdlcTR7sH/UXYylNK2SuZ8DZ8eCWKPcA3BWSWj9QR2AidfpHrUIi8x+DeCNUA+AiFq1GXGhnRg8rHaqvy1+rTCFspSfWFfyCxXmA\u003d\u003d"
     }
   },
   "targets": {
@@ -299,6 +308,40 @@
         "library": "core",
         "controllerNamespace": "Lofsdalen.controller",
         "appStores": ""
+      }
+    },
+    "app/view/SettingsView.js": {
+      "source": "{formFileName}.js.tpl.merge",
+      "version": "9502f3b14cc89647cc0b6d8dd845342687ee4777",
+      "parameters": {
+        "appName": "Lofsdalen",
+        "xtype": "settingsview",
+        "name": "SettingsView",
+        "fields": "geo:toggle:Geo,units:select:Units,name:text:Name,city:text:City,country:text:Country",
+        "formFileName": "SettingsView"
+      }
+    },
+    "app/model/Setting.js": {
+      "source": "{modelFileName}.js.tpl.merge",
+      "version": "b440abe61f1cfb3bbc31c9554696b4c7e9e2c329",
+      "parameters": {
+        "appName": "Lofsdalen",
+        "modelNamespace": "Lofsdalen.model",
+        "baseClass": "Ext.data.Model",
+        "modelFileName": "Setting",
+        "name": "Setting",
+        "fields": "id:auto:null,city:auto:null,name:auto:null,country:auto:null,units:auto:null,geo:boolean:null"
+      }
+    },
+    "app/controller/Main.js": {
+      "source": "{controllerFileName}.js.tpl.merge",
+      "version": "7cd8d1cf12515ca525732931d6b775e3f7924ad9",
+      "parameters": {
+        "appName": "Lofsdalen",
+        "controllerName": "Main",
+        "controllerFileName": "Main",
+        "name": "Main",
+        "controllerNamespace": "Lofsdalen.controller"
       }
     }
   }

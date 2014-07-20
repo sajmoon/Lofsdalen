@@ -678,7 +678,9 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
-  "Lofsdalen.view.Main": []
+  "Lofsdalen.model.Setting": [],
+  "Lofsdalen.view.Main": [],
+  "Lofsdalen.view.SettingsView": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1408,8 +1410,12 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
+  "Lofsdalen.model.Setting": [],
   "Lofsdalen.view.Main": [
     "widget.main"
+  ],
+  "Lofsdalen.view.SettingsView": [
+    "widget.settingsview"
   ]
 });
 
