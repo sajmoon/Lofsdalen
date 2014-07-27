@@ -3,14 +3,16 @@ Ext.define('Lofsdalen.view.ContactView', {
     xtype: 'contactview',
 
     requires: [
-        'Ext.form.FieldSet'
+        'Ext.form.FieldSet',
+        'Ext.field.Email'
     ],
 
     config: {
         title: 'Contact',
-        xtype: "formpanel",
+        //xtype: 'formpanel',
         iconCls:"user",
         layout: "vbox",
+        id: 'contactForm',
         url: 'contact.php',
 
         items: [{
@@ -21,15 +23,18 @@ Ext.define('Lofsdalen.view.ContactView', {
 
             items: [{
                 xtype: 'textfield',
-                label: 'Namn'    
+                label: 'Namn',
+                name: 'name'  
             },
             {
                 xtype: 'emailfield',
-                label: 'Email'
+                label: 'Email',
+                name: 'email'
             },
             {
                 xtype: 'textareafield',
-                label: 'Vad tycker du?'
+                label: 'Vad tycker du?',
+                name: 'message'
             }]
             },
             {
@@ -37,7 +42,9 @@ Ext.define('Lofsdalen.view.ContactView', {
                 text: 'Skicka',
                 ui: 'confirm',
                 handler: function() {
-                    this.up('formpanel').submit();
+                    var values = Ext.getCmp('contactForm').getValues();
+                    Ext.Msg.alert('Welcome', Ext.String.format('{0} {1} {3}', values.name, values.email, values.message));
+                    //this.up('fieldset').submit();
                 }
             }
         ]

@@ -9,7 +9,8 @@ Ext.define('Lofsdalen.model.Setting', {
             { name: 'city', type: 'auto' },
             { name: 'country', type: 'auto' },
             { name: 'units', type: 'auto' },
-            { name: 'geo', type: 'boolean' }
+            { name: 'geo', type: 'boolean' },
+            { name: 'name', type: 'auto' }
         ],
         validations: [{
                 type: 'presence',
@@ -24,7 +25,7 @@ Ext.define('Lofsdalen.model.Setting', {
         ],
         proxy: {
             type: 'localstorage',
-            id: 'weathersettings'
+            id: 'lofsdalensettings'
         }
     }
 });

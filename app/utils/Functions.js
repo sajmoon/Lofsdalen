@@ -37,14 +37,18 @@ Ext.define('Lofsdalen.utils.Functions', {
 
 		Ext.getStore('Settings').load({
 			callback: function(records, operation, success) {
+				console.log("load: " + records.length);
 
 				if (records.length > 0) {
+					console.log("load");
 
 					//Load details from settings
 					var units = records[0].get('units');
 					var city = records[0].get('city');
 					var country = records[0].get('country');
 					var geo = records[0].get('geo');
+
+					console.log("data: " +  units + " " + city + " " + country);
 
 					//prefill all fields
 					if(!geo){
@@ -132,8 +136,8 @@ Ext.define('Lofsdalen.utils.Functions', {
 				Ext.Viewport.unmask();
 				try {
 					var weather = result.data.weather;
-					Lofsdalen.utils.Functions.createTemplate(weather[0].weatherDesc[0].value);
-					Ext.Msg.alert("Error", weather[0]);
+					// Lofsdalen.utils.Functions.createTemplate(weather[0].weatherDesc[0].value);
+					//Ext.Msg.alert("Error", weather[0]);
 				} catch (e) {
 					if(result.data.error){
 						Ext.Msg.alert("Error", result.data.error[0].msg);

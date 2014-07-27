@@ -5,11 +5,11 @@ Ext.define('Lofsdalen.view.Main', {
     xtype: 'main',
     requires: [
         'Ext.TitleBar',
-        'Ext.Video',
         'Lofsdalen.view.SettingsView',
         'Ext.data.proxy.JsonP',
         'Ext.dataview.NestedList',
-        'Lofsdalen.view.ContactView'
+        'Lofsdalen.view.ContactView',
+        'Lofsdalen.view.VenuesView'
     ],
     config: {
         tabBarPosition: 'bottom',
@@ -55,8 +55,13 @@ Ext.define('Lofsdalen.view.Main', {
                 }
             },
             {
+                iconCls: 'action',
+                action: 'venuesview',
+                xtype: 'venuesview'
+            },
+            {
                 iconCls: 'settings',
-                action: 'settings',
+                action: 'settingsview',
                 xtype: "settingsview"
             },
             { 

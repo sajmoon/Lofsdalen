@@ -19,11 +19,22 @@ Ext.define('Lofsdalen.view.SettingsView', {
                 {
                     name: 'geo',
                     xtype: 'togglefield',
-                    label: 'Geo'
+                    label: 'Auto Detect?',
+                    labelWidth: '55%',
+                    value: '1'
                 },
                 {
                     name: 'units',
                     xtype: 'selectfield',
+                    options: [
+                    {
+                        text: 'Fahrenheit',
+                        value: 'f'
+                    },
+                    {
+                         text: 'Celsius',
+                         value: 'c'
+                    }],
                     label: 'Units'
                 },
                 {
@@ -34,16 +45,20 @@ Ext.define('Lofsdalen.view.SettingsView', {
                 {
                     name: 'city',
                     xtype: 'textfield',
-                    label: 'City'
+                    label: 'City',
+                    disabled: true
                 },
                 {
                     name: 'country',
                     xtype: 'textfield',
-                    label: 'Country'
+                    label: 'Country',
+                    disabled: true
                 },
                 {
                     xtype: 'button',
-                    text: 'Submit',
+                    text: 'Refresh',
+                    action: 'refresh',
+                    margin: '10 5',
                     ui: 'confirm'
                 }
             ]}

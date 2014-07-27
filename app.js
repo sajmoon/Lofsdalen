@@ -50,7 +50,6 @@ Ext.application({
 
         // Initialize the main view
         Ext.Viewport.add(Ext.create('Lofsdalen.view.Main'));
-        Ext.Viewport.add(Ext.create('Lofsdalen.view.Settings'));
     },
 
     onUpdated: function() {

@@ -1,5 +1,9 @@
 Ext.define('Lofsdalen.controller.Main', {
     extend: 'Ext.app.Controller',
+
+    requires: [
+        'Lofsdalen.utils.Functions'
+    ],
     
     config: {
         stores: 'Lofsdalen.store.Settings',
@@ -18,7 +22,7 @@ Ext.define('Lofsdalen.controller.Main', {
         },
         control: {
             'btnRefresh': {
-            //    tap: 'onRefresh'
+                tap: 'onRefresh'
             },
             'btnSettings': {
                 tap: 'onSettingsBtnTap'
@@ -42,9 +46,69 @@ Ext.define('Lofsdalen.controller.Main', {
     onSettingsBtnTap: function() {
         this.getMainView().setActiveItem(1);
     },
+
+    onRefresh: function() {
+        Ext.Viewport.setMasked({
+            xtype: 'loadmask',
+            indicator: true,
+            message: 'Save Settings...'
+        });
+
+        var errorstring = "";
+        var store = Ext.getStore('Settings');
+
+        //console.log((store));
+        //remove previous settings
+        store.removeAll();
+        store.sync();
+
+        var model = Ext.create("Lofsdalen.model.Setting", {});
+
+        this.getSettingsView().updateRecord(model);
+
+        model.save({
+            success: function(model) {
+                store.sync();
+                Ext.Msg.alert("Saved data", JSON.stringify(model.getData()));
+            }
+        });
+
+        //console.log(model);
+        //var errors = model.validate();
+
+        //console.log(errors);
+
+        //var model = Ext.create("Lofsdalen.model.Setting", {});
+        // model.save({
+        //     success: function(model) {
+        //         model.set('name','george');
+        //         model.set('units','c');
+        //         model.save(); // you should handle error here too
+        //     }
+        //     // you should handle error cases too...
+        // });
+
+        //console.log(model.getData());
+
+        //store.add(model.getData());
+        //store.sync();
+        //Ext.Msg.alert("Saved data", JSON.stringify(model.getData()));
+
+        //Ext.getStore('Settings').load({
+        //    callback: function(records, operation, success) {
+        //        console.log("load: " + records.length);
+        //    }});
+
+
+        //console.log((store));
+
+            //Lofsdalen.utils.Functions.loadData();
+
+        Ext.Viewport.unmask();
+    },
     
     //called when the Application is launched, remove if not needed
     launch: function(app) {
-
+         Lofsdalen.utils.Functions.loadData();
     }
 });
