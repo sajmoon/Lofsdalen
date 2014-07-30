@@ -67,6 +67,7 @@
 
     <!-- Copy all web files to phonegap dir -->
     <target name="-after-build">
+        <echo level="error" message="phonegap dir: ${app.phonegap.www.dir}" />
         <delete dir="${app.phonegap.www.dir}"/>
 
         <copy todir="${app.phonegap.www.dir}" overwrite="true">
@@ -76,14 +77,13 @@
         </copy>
         <echo level="error" message="Build dir: ${build.dir}" />
 
-
         <property name="project.tmp" value="${basedir}/"/>
         <property name="project.zip" value="www.zip"/>
 
         <if>
-            <equals arg1="${build.environment}" arg2="testing"/>
+            <equals arg1="${build.environment}" arg2="package"/>
             <then>
-                <echo level="warning">Packaging project into zip file!</echo>
+                <echo level="error">Packaging project into zip file!</echo>
                 <zip destfile="${project.tmp}/${project.zip}" basedir="${app.phonegap.www.dir}"/>
 
                 <property name="project.id" value="1014039" />

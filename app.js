@@ -23,7 +23,12 @@ Ext.application({
     ],
 
     views: [
-        'Main'
+        'Main',
+        'VenuesView'
+    ],
+
+    stores: [
+        'VenueStore'
     ],
 
     icon: {
@@ -45,11 +50,16 @@ Ext.application({
     },
 
     launch: function() {
-        // Destroy the #appLoadingIndicator element
-        Ext.fly('appLoadingIndicator').destroy();
+        /*if (this.readyCounter !== 1) {
+            this.readyCounter += 1;
+            return;
+        } else {*/
+            // Destroy the #appLoadingIndicator element
+            Ext.fly('appLoadingIndicator').destroy();
 
-        // Initialize the main view
-        Ext.Viewport.add(Ext.create('Lofsdalen.view.Main'));
+            // Initialize the main view
+            Ext.Viewport.add(Ext.create('Lofsdalen.view.Main'));    
+        //}
     },
 
     onUpdated: function() {

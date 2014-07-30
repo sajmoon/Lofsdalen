@@ -5,7 +5,7 @@ Ext.define('Cóntact', {
 		fields: ['id', 'name', 'email', 'message'],
 
 		proxy: {
-			type: 'parse',
+			type: 'parse'
 		}
 	}
-})
+});

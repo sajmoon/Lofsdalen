@@ -38,7 +38,7 @@ Ext.define('Lofsdalen.utils.Functions', {
 		Ext.getStore('Settings').load({
 			callback: function(records, operation, success) {
 				console.log("load: " + records.length);
-
+/*
 				if (records.length > 0) {
 					console.log("load");
 
@@ -52,7 +52,7 @@ Ext.define('Lofsdalen.utils.Functions', {
 
 					//prefill all fields
 					if(!geo){
-						Ext.ComponentQuery.query('settingsview togglefield[name=geo]')[0].setValue(0);
+						//Ext.ComponentQuery.query('settingsview togglefield[name=geo]')[0].setValue(0);
 					} else {
 						Ext.ComponentQuery.query('settingsview togglefield[name=geo]')[0].setValue(1);
 					}
@@ -66,18 +66,18 @@ Ext.define('Lofsdalen.utils.Functions', {
 					if (city && country) {
 						if(country == "US" || country == "USA") country = "United States Of America";
 						
-						Lofsdalen.utils.Functions.getWeather(city + " " + country);
+						//Lofsdalen.utils.Functions.getWeather(city + " " + country);
 					} else {
 						//There are no city settings saved,
 						//get location from Geolocation.
-						me.getCurrentLocation();
+						//me.getCurrentLocation();
 					}
 				} else {
 					//There are no city settings saved,
 					//get location from Geolocation.
-					me.getCurrentLocation();
+					//me.getCurrentLocation();
 				}
-
+*/
 				Ext.Viewport.unmask();
 			}
 		});

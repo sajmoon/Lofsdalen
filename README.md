@@ -16,4 +16,6 @@ sencha fs web -p <PORT> start
 
 
 #Deploy
-sencha app build production
+sencha app build pacakge
+
+It will zip a phonegap dir and upload it to phonegap build.

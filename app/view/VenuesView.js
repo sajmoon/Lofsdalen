@@ -1,22 +1,29 @@
 Ext.define('Lofsdalen.view.VenuesView', {
-	extend: 'Ext.form.Panel',
-	xtype: 'venuesview',
+  extend: 'Ext.tab.Tab',
+  xtype: 'venuesview',
+  
+  requires: [
+    'Ext.dataview.NestedList',
+    'Ext.List',
+    'Lofsdalen.store.Venue'
+  ],
 
-	requires: [
-		'Ext.TitleBar',
-		'Ext.dataview.NestedList'
-	],
+  config: {
+    title: 'Ställen',
+    fullscreen: true,
+    items: [
+      {
+        xtype: 'list',
+        title: 'hej',
+        itemHeight: 60,
+        itemTpl: '<p><h1>{name}</h1>{shortdesc}</p>',
+        
+        data: [
+          { name: "Trapper", shortDesc: "Hejsan. Lorem ipsum.. Weeee" },
+          { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
+        ]
+      }
+    ]
+  }
+});
 
-	config: {
-		title: "Venues",
-		items: [
-			{
-				xtype: 'nestedlist',
-				title: 'Venues',
-				items: [{
-					
-				}]
-			}
-		]
-	}
-})

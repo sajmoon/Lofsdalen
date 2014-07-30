@@ -23,6 +23,7 @@
  */
 
 Ext.Loader.addClassPathMappings({
+  "Cóntact": "app/model/Contact.js",
   "Ext": "touch/src",
   "Ext-more": "touch/src/core/Ext-more.js",
   "Ext.DomHelper": "touch/src/dom/Helper.js",
@@ -48,6 +49,7 @@ Ext.Loader.addClassPathMappings({
   "Lofsdalen": "app"
 });
 Ext.ClassManager.addNameAlternateMappings({
+  "Cóntact": [],
   "Ext.AbstractComponent": [],
   "Ext.AbstractManager": [],
   "Ext.AbstractPlugin": [],
@@ -680,13 +682,18 @@ Ext.ClassManager.addNameAlternateMappings({
   ],
   "Lofsdalen.controller.Main": [],
   "Lofsdalen.model.Setting": [],
+  "Lofsdalen.model.Venue": [],
+  "Lofsdalen.proxy.ParseProxy": [],
   "Lofsdalen.store.Settings": [],
+  "Lofsdalen.store.Venue": [],
   "Lofsdalen.utils.Functions": [],
   "Lofsdalen.view.ContactView": [],
   "Lofsdalen.view.Main": [],
-  "Lofsdalen.view.SettingsView": []
+  "Lofsdalen.view.SettingsView": [],
+  "Lofsdalen.view.VenuesView": []
 });
 Ext.ClassManager.addNameAliasMappings({
+  "Cóntact": [],
   "Ext.AbstractComponent": [],
   "Ext.AbstractManager": [],
   "Ext.AbstractPlugin": [],
@@ -1416,7 +1423,12 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.WindowsPhone": [],
   "Lofsdalen.controller.Main": [],
   "Lofsdalen.model.Setting": [],
+  "Lofsdalen.model.Venue": [],
+  "Lofsdalen.proxy.ParseProxy": [
+    "proxy.parseproxy"
+  ],
   "Lofsdalen.store.Settings": [],
+  "Lofsdalen.store.Venue": [],
   "Lofsdalen.utils.Functions": [],
   "Lofsdalen.view.ContactView": [
     "widget.contactview"
@@ -1426,6 +1438,9 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "Lofsdalen.view.SettingsView": [
     "widget.settingsview"
+  ],
+  "Lofsdalen.view.VenuesView": [
+    "widget.venuesview"
   ]
 });
 
