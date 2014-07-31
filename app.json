@@ -41,7 +41,8 @@
     "js": [
 		{
 			"path": "phonegap.js",
-			"remote": true
+            "remote": true
+
 		},
         {
             "path": "touch/sencha-touch.js",

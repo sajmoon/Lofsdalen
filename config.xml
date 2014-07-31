@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.woland.lofsdalen" version="0.0.1.14" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.woland.lofsdalen" version="0.0.1.16.4" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Lofsdalen</name>
     <description>
         Välkommen till Lofsdalen
@@ -34,7 +34,7 @@
     <!-- <gap:plugin name="org.apache.cordova.dialogs" /> -->
     <!-- <gap:plugin name="org.apache.cordova.file" />
     <gap:plugin name="org.apache.cordova.file-transfer" />-->
-    <gap:plugin name="org.apache.cordova.geolocation" />
+    <!-- <gap:plugin name="org.apache.cordova.geolocation" /> -->
     <!-- <gap:plugin name="org.apache.cordova.globalization" /> -->
     <!-- <gap:plugin name="org.apache.cordova.inappbrowser" /> -->
     <!-- <gap:plugin name="org.apache.cordova.media" />

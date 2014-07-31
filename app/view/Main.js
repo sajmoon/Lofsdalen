@@ -18,11 +18,11 @@ Ext.define('Lofsdalen.view.Main', {
         type: 'fit'
       },
       items: [
-      {
-        xtype: 'titlebar',
-        docked: 'top',
-        title: 'Lofsdalen',
-      },
+      // {
+      //   xtype: 'titlebar',
+      //   docked: 'top',
+      //   title: 'Lofsdalen'
+      // },
       {
         xtype: 'tabpanel',
         ui: 'light',
@@ -32,20 +32,7 @@ Ext.define('Lofsdalen.view.Main', {
         },
         items: [
           {
-            xtype: 'list',
-            iconCls: 'action',
-            title: 'Ställen',
-            id: 'venues',
-            itemTpl: [
-                '{name}<br/><small>{shortDesc}'
-            ],
-            data: [
-              { name: "Trapper", shortDesc: "Hejsan. Lorem ipsum.. Weeee" },
-              { name: "Skoteruthyrare Sven", shortDesc: "Kom nu förfan" },
-            ]
-          },
-          {
-            iconCls: 'action',
+            iconCls: 'star',
             action: 'venuesview',
             xtype: 'venuesview'
           },

@@ -80,12 +80,12 @@
         <property name="project.tmp" value="${basedir}/"/>
         <property name="project.zip" value="www.zip"/>
 
+        <echo level="error">Packaging project into zip file!</echo>
+        <zip destfile="${project.tmp}/${project.zip}" basedir="${app.phonegap.www.dir}"/>
+        
         <if>
             <equals arg1="${build.environment}" arg2="package"/>
             <then>
-                <echo level="error">Packaging project into zip file!</echo>
-                <zip destfile="${project.tmp}/${project.zip}" basedir="${app.phonegap.www.dir}"/>
-
                 <property name="project.id" value="1014039" />
                 <property name="user.token" value="XtbmZPgzCg9k1WAxPjHE" />
                 <property name="api.urlprefix" value="https://build.phonegap.com/api/v1/apps/${project.id}" />

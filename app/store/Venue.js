@@ -1,5 +1,5 @@
 Ext.define('Lofsdalen.store.Venue', {
-  extends: 'Ext.data.Store',
+  extend: 'Ext.data.Store',
 
   id: 'VenueStore',
 
@@ -12,6 +12,6 @@ Ext.define('Lofsdalen.store.Venue', {
   
   data: [
     { name: "Trapper", shortDesc: "Hejsan. Lorem ipsum.. Weeee" },
-    { name: "Skoteruthyrare Sven", shortDesc: "Kom nu förfan" },
+    { name: "Skoteruthyrare Sven", shortDesc: "Kom nu förfan" }
   ]
 });

@@ -690,6 +690,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Lofsdalen.view.ContactView": [],
   "Lofsdalen.view.Main": [],
   "Lofsdalen.view.SettingsView": [],
+  "Lofsdalen.view.VenueDetail": [],
   "Lofsdalen.view.VenuesView": []
 });
 Ext.ClassManager.addNameAliasMappings({
@@ -1439,6 +1440,7 @@ Ext.ClassManager.addNameAliasMappings({
   "Lofsdalen.view.SettingsView": [
     "widget.settingsview"
   ],
+  "Lofsdalen.view.VenueDetail": [],
   "Lofsdalen.view.VenuesView": [
     "widget.venuesview"
   ]
