@@ -20,7 +20,8 @@ Ext.define('Lofsdalen.view.VenuesView', {
       {
         xtype: 'image',
         src: "http://www.lofsdalen.com/core/images/95/aktiviteter_mernarhet.jpg",
-        flex: 1
+        flex: 1,
+        style: "-webkit-background-size: cover;"
       },
       {
         xtype: 'list',
@@ -28,23 +29,24 @@ Ext.define('Lofsdalen.view.VenuesView', {
         title: 'Ställen',
         id: 'venuesview',
         tabBar: false,
+        flex: 2,
 
         itemTpl: [
           '{name}<br/><small>{shortDesc}'
         ],
         
         data: [
-          { name: "Trapper3", shortDesc: "Hejsan. Lorem ipsum.. Weeee" },
+          { name: "Trapper", shortDesc: "Hejsan. Lorem ipsum.. Weeee" },
+          { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
+          { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
+          { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
+          { name: "Annas annorlunda annanaser", shortDesc: "Smaka på spännande nyheter från hela världen." },
           { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
           { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
           { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
           { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
           { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
-          { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
-          { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
-          { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
-          { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
-          { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" }
+          { name: "Voffelstugan", shortDesc: "Kom nu förfan" }
         ]
       }
     ]
