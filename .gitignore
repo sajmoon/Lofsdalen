@@ -1,3 +1,4 @@
 build/
 www.zip
 phonegap/www
+resources/sass/.sass-cache/
