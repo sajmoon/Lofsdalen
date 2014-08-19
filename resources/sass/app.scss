@@ -24,7 +24,7 @@ $base_gradient: 'flat';
   font-style: italic, oblique;
 }
 
-//$font-family: "Roboto";
+$font-family: "Roboto";
 
 $list-bg-color: darken(white,0%);
 
@@ -35,6 +35,9 @@ $venue-list-item-bg-color: white;
 $venue-list-item-bg-color-selected: $selected;
 
 .venueList {
+  background-color: darken($venue-list-item-bg-color,20%);
+  padding-top: 10px;
+  margin-bottom: 10px;
   .venueListItem {
     .image {
       float: left;
@@ -51,12 +54,14 @@ $venue-list-item-bg-color-selected: $selected;
     }
     height: 100px;
 
+    background-color: $venue-list-item-bg-color;
+
     &.venueListItem-selected {
       background-color: $venue-list-item-bg-color-selected;
     }
 
-    &.x-item-pressed {
-      background-color: yellow;
+    &.venueListItem-pressed {
+      background-color: lighten($venue-list-item-bg-color-selected, 5%);
     }
   }
 }

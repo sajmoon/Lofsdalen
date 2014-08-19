@@ -1,6 +1,7 @@
 Ext.define('Lofsdalen.view.VenuesView', {
   extend: 'Ext.Container',
   xtype: 'venuesview',
+  fullscreen: false,
   
   requires: [
     'Ext.dataview.NestedList',
@@ -13,6 +14,7 @@ Ext.define('Lofsdalen.view.VenuesView', {
   config: {
     iconCls: 'action',
     title: 'Ställen',
+    fullscreen: false,
     defaults: {
       //margin: '5 5 5 5'
     },
@@ -38,6 +40,8 @@ Ext.define('Lofsdalen.view.VenuesView', {
 
         itemCls: 'venueListItem',
         selectedCls: 'venueListItem-selected',
+        pressedCls: 'venueListItem-pressed',
+
         itemHeight: 200,
         variableHeights: true,
 

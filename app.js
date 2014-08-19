@@ -54,7 +54,7 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('Lofsdalen.view.Main'));
+        Ext.Viewport.add(Ext.create('Lofsdalen.view.Main', {fullscreen: false}));
     },
 
     onUpdated: function() {

@@ -1,7 +1,7 @@
 Ext.define('Lofsdalen.view.Main', {
     extend: 'Ext.Container',
     //extend: 'Ext.Carousel',
-    //fullscreen: true,
+    fullscreen: false,
     xtype: 'main',
     requires: [
         'Ext.TitleBar',
@@ -17,12 +17,13 @@ Ext.define('Lofsdalen.view.Main', {
       layout: {
         type: 'fit'
       },
+
       items: [
-      // {
-      //   xtype: 'titlebar',
-      //   docked: 'top',
-      //   title: 'Lofsdalen'
-      // },
+      {
+        xtype: 'titlebar',
+        docked: 'top',
+        title: 'Lofsdalen'
+      },
       {
         xtype: 'tabpanel',
         ui: 'winter',
