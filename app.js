@@ -24,8 +24,7 @@ Ext.application({
 
     views: [
         'Main',
-        'VenuesView',
-        'VenueListItem'
+        'VenuesView'
     ],
 
     stores: [

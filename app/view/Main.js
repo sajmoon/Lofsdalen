@@ -25,7 +25,7 @@ Ext.define('Lofsdalen.view.Main', {
       // },
       {
         xtype: 'tabpanel',
-        ui: 'light',
+        ui: 'winter',
         layout: {
           animation: 'slide',
           type: 'card'

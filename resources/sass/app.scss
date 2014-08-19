@@ -1,3 +1,90 @@
+$base-color: #00897b;
+$base_gradient: 'flat';
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/roboto/Roboto-Light.ttf);
+  font-weight: light;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/roboto/Roboto-Black.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/roboto/Roboto-Italic.ttf);
+  font-style: italic, oblique;
+}
+
+//$font-family: "Roboto";
+
+$list-bg-color: darken(white,0%);
+
+$selected: #d7ccc8;
+
+$venue-name-color: $base-color;
+$venue-list-item-bg-color: white;
+$venue-list-item-bg-color-selected: $selected;
+
+.venueList {
+  .venueListItem {
+    .image {
+      float: left;
+      margin-right: 10px;
+    }
+    .venueName {
+      font-size: 110%;
+      font-weight: 700;
+      font-style: light;
+      color: $venue-name-color;
+    }
+    .venueDescription {
+      font-size: 70%;
+    }
+    height: 100px;
+
+    &.venueListItem-selected {
+      background-color: $venue-list-item-bg-color-selected;
+    }
+
+    &.x-item-pressed {
+      background-color: yellow;
+    }
+  }
+}
+
+.header-logo {
+  display: block;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+
+  .header-logo-text {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+
+    font-weight: bold;
+    font-size: 160%;
+
+    color: $base-color;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $base-color;
+    
+    margin-left: auto;
+    margin-right: auto;
+  }  
+}
+
 // The following two lines import the default Sencha Touch theme. If you are building
 // a new theme, remove them and the add your own CSS on top of the base CSS (which
 // is already included in your app.json file).
@@ -8,3 +95,4 @@
 
 // Examples of using the icon mixin:
 // @include icon('user');
+@include sencha-tabbar-ui('winter', white, 'flat', #AE537A);
