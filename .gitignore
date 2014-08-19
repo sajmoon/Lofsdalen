@@ -2,3 +2,4 @@ build/
 www.zip
 phonegap/www
 resources/sass/.sass-cache/
+.sencha_backup/
