@@ -5,50 +5,51 @@ Ext.define('Lofsdalen.view.VenuesView', {
   requires: [
     'Ext.dataview.NestedList',
     'Ext.List',
-    'Ext.Img'
+    'Ext.Img',
+    'Lofsdalen.view.VenueListItem',
+    'Ext.DataView'
     //'Lofsdalen.store.Venue'
+    
   ],
 
   config: {
     xtype: 'container',
-    layout: 'vbox',
+    layout: 'fit',
+    iconCls: 'action',
+    title: 'Ställen',
     fullscreen: true,
-    defaults: { flex: 1 },
-
     
     items: [
       {
-        xtype: 'image',
-        src: "http://www.lofsdalen.com/core/images/95/aktiviteter_mernarhet.jpg",
-        flex: 1,
-        style: "-webkit-background-size: cover;"
-      },
-      {
-        xtype: 'list',
+        xtype: 'dataview',
         iconCls: 'action',
         title: 'Ställen',
+        useComponents: true,
+        cls: 'venue-list',
+
+        defaultType: 'venuelistitem',
+
         id: 'venuesview',
         tabBar: false,
-        flex: 2,
+        //selectedCls: '',
 
-        itemTpl: [
-          '{name}<br/><small>{shortDesc}'
+        items:[
+          {
+            xtype:'image',
+            scrollDock:'top',
+            src: "http://www.lofsdalen.com/core/images/95/aktiviteter_mernarhet.jpg",
+            style: "-webkit-background-size: cover;",
+            docked:'top',
+            height:100
+          }
         ],
+
+        store: "Venue",
+
         
-        data: [
-          { name: "Trapper", shortDesc: "Hejsan. Lorem ipsum.. Weeee" },
-          { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
-          { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
-          { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
-          { name: "Annas annorlunda annanaser", shortDesc: "Smaka på spännande nyheter från hela världen." },
-          { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
-          { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
-          { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
-          { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
-          { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
-          { name: "Voffelstugan", shortDesc: "Kom nu förfan" }
-        ]
       }
+
+        
     ]
   }
 });

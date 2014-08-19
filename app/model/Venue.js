@@ -6,7 +6,7 @@ Ext.define('Lofsdalen.model.Venue', {
     idProperty: 'id',
     identifier: 'uuid',
     fields: [
-      { name: 'id', type: 'auto' },
+      { name: 'id', type: 'auto', image: "" },
       { name: 'name', type: 'auto' },
       { name: 'shortdesc', type: 'auto'}
     ]

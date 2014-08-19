@@ -78,6 +78,7 @@
     "css": [
         {
             "path": "resources/css/app.css",
+            "platform": ["chrome", "safari", "ios", "android"],
             "update": "delta"
         }
     ],

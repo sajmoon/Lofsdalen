@@ -1,8 +1,6 @@
 Ext.define('Lofsdalen.store.Venue', {
   extend: 'Ext.data.Store',
 
-  id: 'VenueStore',
-
   requires: [
     'Lofsdalen.model.Venue'
   ],
@@ -12,6 +10,21 @@ Ext.define('Lofsdalen.store.Venue', {
   
   data: [
     { name: "Trapper", shortDesc: "Hejsan. Lorem ipsum.. Weeee" },
-    { name: "Skoteruthyrare Sven", shortDesc: "Kom nu förfan" }
+    { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
+    { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
+    { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
+    { name: "Annas annorlunda annanaser", shortDesc: "Smaka på spännande nyheter från hela världen." },
+    { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
+    { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
+    { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
+    { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
+    { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
+    { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
+    { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
+    { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
+    { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
+    { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
+    { name: "Skiduthyraren Sven", shortDesc: "Kom nu förfan" },
+    { name: "Voffelstugan", shortDesc: "Kom nu förfan" }
   ]
 });

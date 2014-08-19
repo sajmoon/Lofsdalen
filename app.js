@@ -23,10 +23,13 @@ Ext.application({
     ],
 
     views: [
-        'Main'
+        'Main',
+        'VenuesView',
+        'VenueListItem'
     ],
 
     stores: [
+        'Venue'
     ],
 
     icon: {
