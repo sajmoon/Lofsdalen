@@ -675,6 +675,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Lofsdalen.store.Venue": [],
   "Lofsdalen.utils.Functions": [],
   "Lofsdalen.view.ContactView": [],
+  "Lofsdalen.view.IntroView": [],
   "Lofsdalen.view.Main": [],
   "Lofsdalen.view.SettingsView": [],
   "Lofsdalen.view.VenueDetail": [],
@@ -1422,6 +1423,9 @@ Ext.ClassManager.addNameAliasMappings({
   "Lofsdalen.utils.Functions": [],
   "Lofsdalen.view.ContactView": [
     "widget.contactview"
+  ],
+  "Lofsdalen.view.IntroView": [
+    "widget.introview"
   ],
   "Lofsdalen.view.Main": [
     "widget.main"

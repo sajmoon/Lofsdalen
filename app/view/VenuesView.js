@@ -36,7 +36,14 @@ Ext.define('Lofsdalen.view.VenuesView', {
             '<img src="http://p-hold.com/80" />' +
           '</div>'+
           '<div class="venueName">{name}</div>'+
-          '<div class="venueDescription">{shortDesc}</div>',
+          '<div class="venueDescription">{shortDesc}</div>' +
+          '<div class="see-more-button"></div>'+
+          '<div class="categories"><tpl for="categories"><img class="category-icon" src="{url}"/></tpl></div>',
+
+        listeners : {
+          itemtap: function(a,s,el) {
+          }
+        },
 
         itemCls: 'venueListItem',
         selectedCls: 'venueListItem-selected',

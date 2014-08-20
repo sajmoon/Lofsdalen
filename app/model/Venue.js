@@ -9,7 +9,7 @@ Ext.define('Lofsdalen.model.Venue', {
       { name: 'id', type: 'string', image: "" },
       { name: 'name', type: 'string' },
       { name: 'shortDesc', type: 'string' },
-      { name: 'categories', type: 'auto' }
+      { name: 'categories', type: 'array' }
     ]
   }
 });

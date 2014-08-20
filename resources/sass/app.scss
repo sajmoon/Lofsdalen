@@ -1,6 +1,7 @@
 $base-color: #00897b;
 $base_gradient: 'flat';
 
+
 @font-face {
   font-family: 'Roboto';
   src: url(../fonts/roboto/Roboto-Regular.ttf);
@@ -26,22 +27,62 @@ $base_gradient: 'flat';
 
 $font-family: "Roboto";
 
-$list-bg-color: darken(white,0%);
+$list-bg-color: #cfd8dc;
 
-$selected: #d7ccc8;
+$selected: darken(white, 4%);
 
 $venue-name-color: $base-color;
 $venue-list-item-bg-color: white;
 $venue-list-item-bg-color-selected: $selected;
 
+
+// The following two lines import the default Sencha Touch theme. If you are building
+// a new theme, remove them and the add your own CSS on top of the base CSS (which
+// is already included in your app.json file).
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all';
+
+@mixin add-icon($name, $font-family: 'Pictos') {
+  $character: icon-character-for-name($name);
+
+  &:before {
+      text-align: center;
+      font-family: $font-family;
+
+      @if $character {
+          content: "#{$character}";
+      } @else {
+          content: "#{$name}";
+      }
+  }
+}
+
+.intro-view-panel {
+  background: url(http://www.lofsdalen.com/core/images/95/aktiviteter_mernarhet.jpg) no-repeat center center fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hidden {
+  display: none;
+}
+
 .venueList {
-  background-color: darken($venue-list-item-bg-color,20%);
-  padding-top: 10px;
-  margin-bottom: 10px;
+  .x-list-item {
+    -webkit-transition : height 300ms ease-in;
+    //&.active { height: 300px; }
+  }
   .venueListItem {
+    margin-top: 2px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #eee;
+  
     .image {
       float: left;
       margin-right: 10px;
+      border: 1px solid #eee;
+      border-radius: 10px;
     }
     .venueName {
       font-size: 110%;
@@ -52,6 +93,33 @@ $venue-list-item-bg-color-selected: $selected;
     .venueDescription {
       font-size: 70%;
     }
+
+    .see-more-button {
+      float: right;
+      display: none;
+      @include add-icon('right');
+    }
+
+    .categories {
+      margin: 3px;
+
+      .category-icon {
+        border-radius: 15px;
+        //background-color: lighten(#cfd8dc,10%);
+        border: 1px solid darken(#cfd8dc, 2%);
+        background: -moz-linear-gradient(top, rgba(30,87,153,0.35) 0%, rgba(41,137,216,0.38) 24%, rgba(11,160,224,0.43) 64%, rgba(125,185,232,0.47) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,0.35)), color-stop(24%,rgba(41,137,216,0.38)), color-stop(64%,rgba(11,160,224,0.43)), color-stop(100%,rgba(125,185,232,0.47))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(30,87,153,0.35) 0%,rgba(41,137,216,0.38) 24%,rgba(11,160,224,0.43) 64%,rgba(125,185,232,0.47) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(30,87,153,0.35) 0%,rgba(41,137,216,0.38) 24%,rgba(11,160,224,0.43) 64%,rgba(125,185,232,0.47) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(30,87,153,0.35) 0%,rgba(41,137,216,0.38) 24%,rgba(11,160,224,0.43) 64%,rgba(125,185,232,0.47) 100%); /* IE10+ */
+        background: linear-gradient(to bottom, rgba(30,87,153,0.35) 0%,rgba(41,137,216,0.38) 24%,rgba(11,160,224,0.43) 64%,rgba(125,185,232,0.47) 100%); /* W3C */
+        margin: 1px;
+        padding: 2px;
+        height: 40px;
+        width: 40px;
+      }
+    }
+    
     height: 100px;
 
     background-color: $venue-list-item-bg-color;
@@ -90,14 +158,11 @@ $venue-list-item-bg-color-selected: $selected;
   }  
 }
 
-// The following two lines import the default Sencha Touch theme. If you are building
-// a new theme, remove them and the add your own CSS on top of the base CSS (which
-// is already included in your app.json file).
-@import 'sencha-touch/default';
-@import 'sencha-touch/default/all';
+
 
 // Custom code goes here..
 
 // Examples of using the icon mixin:
 // @include icon('user');
 @include sencha-tabbar-ui('winter', white, 'flat', #AE537A);
+@include icon('user');
