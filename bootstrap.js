@@ -668,6 +668,7 @@ Ext.ClassManager.addNameAlternateMappings({
     "Ext.viewport.WP"
   ],
   "Lofsdalen.controller.Main": [],
+  "Lofsdalen.controller.Venue": [],
   "Lofsdalen.model.Setting": [],
   "Lofsdalen.model.Venue": [],
   "Lofsdalen.proxy.ParseProxy": [],
@@ -1413,6 +1414,7 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
   "Lofsdalen.controller.Main": [],
+  "Lofsdalen.controller.Venue": [],
   "Lofsdalen.model.Setting": [],
   "Lofsdalen.model.Venue": [],
   "Lofsdalen.proxy.ParseProxy": [
@@ -1438,7 +1440,7 @@ Ext.ClassManager.addNameAliasMappings({
     "widget.venuelistitem"
   ],
   "Lofsdalen.view.VenuesView": [
-    "widget.venuesview"
+    "widget.venueslist"
   ]
 });
 

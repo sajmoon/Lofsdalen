@@ -1,6 +1,6 @@
 Ext.define('Lofsdalen.view.VenuesView', {
   extend: 'Ext.Container',
-  xtype: 'venuesview',
+  xtype: 'venueslist',
   fullscreen: false,
   
   requires: [
@@ -8,7 +8,8 @@ Ext.define('Lofsdalen.view.VenuesView', {
     'Ext.List',
     'Ext.Img',
     'Ext.DataView',
-    'Lofsdalen.store.Venue'
+    'Lofsdalen.store.Venue',
+    'Lofsdalen.controller.Venue'
   ],
 
   config: {
@@ -64,6 +65,7 @@ Ext.define('Lofsdalen.view.VenuesView', {
           xtype: 'button',
           scrollDock: 'bottom',
           docked: 'bottom',
+          id: 'moreBtn',
           text: 'Kolla om det finns mer'
         },
         {

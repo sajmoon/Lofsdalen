@@ -19,7 +19,7 @@ Ext.application({
     ],
 
     controllers: [
-        'Main'
+        'Venue'
     ],
 
     views: [

@@ -39,6 +39,11 @@ Ext.define('Lofsdalen.controller.Main', {
         }
     },
 
+    launch: function() {
+        this.callParent();
+        console.log("MainCtrl: launch");
+    },
+
     onViewChange: function() {
 
     },
@@ -72,37 +77,6 @@ Ext.define('Lofsdalen.controller.Main', {
                 Ext.Msg.alert("Saved data", JSON.stringify(model.getData()));
             }
         });
-
-        //console.log(model);
-        //var errors = model.validate();
-
-        //console.log(errors);
-
-        //var model = Ext.create("Lofsdalen.model.Setting", {});
-        // model.save({
-        //     success: function(model) {
-        //         model.set('name','george');
-        //         model.set('units','c');
-        //         model.save(); // you should handle error here too
-        //     }
-        //     // you should handle error cases too...
-        // });
-
-        //console.log(model.getData());
-
-        //store.add(model.getData());
-        //store.sync();
-        //Ext.Msg.alert("Saved data", JSON.stringify(model.getData()));
-
-        //Ext.getStore('Settings').load({
-        //    callback: function(records, operation, success) {
-        //        console.log("load: " + records.length);
-        //    }});
-
-
-        //console.log((store));
-
-            //Lofsdalen.utils.Functions.loadData();
 
         Ext.Viewport.unmask();
     },

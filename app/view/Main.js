@@ -1,5 +1,5 @@
 Ext.define('Lofsdalen.view.Main', {
-    extend: 'Ext.Container',
+    extend: 'Ext.Panel',
     //extend: 'Ext.Carousel',
     fullscreen: false,
     xtype: 'main',
@@ -34,8 +34,8 @@ Ext.define('Lofsdalen.view.Main', {
         items: [
           {
             iconCls: 'star',
-            action: 'venuesview',
-            xtype: 'venuesview'
+            action: 'venueslist',
+            xtype: 'venueslist'
           },
           {
             iconCls: 'settings',
