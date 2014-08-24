@@ -35,8 +35,10 @@ Ext.define('Lofsdalen.controller.Venue', {
   },
 
   onDetailedVenueCommand: function(list, record) {
-    console.log("onDetailedVenueCommand: " + list);
+    console.log("onDetailedVenueCommand:");
+    console.log(record);
     var venueDetail = this.getVenueDetail();
+    venueDetail.setRecord(record);
     Ext.Viewport.animateActiveItem(venueDetail, { type: 'slide', direction: 'left'});
   },
 

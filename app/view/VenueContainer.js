@@ -24,7 +24,7 @@ Ext.define('Lofsdalen.view.VenueContainer', {
 
   onVenueListTap: function(list, record, target, index, evt, options) {
     console.log('VenudeListTap: ' + record);
-    this.fireEvent('detailedVenueCommand', this, record);
+    //this.fireEvent('detailedVenueCommand', this, record);
   },
 
   onVenueListDisclose: function(list, record, target, index, evt, options) {

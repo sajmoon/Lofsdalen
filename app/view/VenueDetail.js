@@ -1,5 +1,5 @@
 Ext.define('Lofsdalen.view.VenueDetail', {
-	extend: 'Ext.Panel',
+	extend: 'Ext.form.Panel',
   alias: 'widget.venuedetail',
 
   config: {
@@ -27,8 +27,18 @@ Ext.define('Lofsdalen.view.VenueDetail', {
       ]
     };
 
+    var venueNameEditor = {
+      xtype: 'textfield',
+      name: 'name',
+      label: 'Name',
+      required: true
+    };
+
     this.add([
-        topToolbar
+        topToolbar,
+        { xtype: 'fieldset',
+          items: [venueNameEditor]
+        }
       ]
     );
   },
