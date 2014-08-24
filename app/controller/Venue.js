@@ -15,31 +15,29 @@ Ext.define('Lofsdalen.controller.Venue', {
     stores: 'Lofsdalen.store.Venue',
 
     refs: {
-      moreButton: '#moreBtn',
-      venueList: 'venueslist list'
+      venueContainer: 'venuecontainer',
+      venueDetail: 'venuedetail'
     },
 
     control: {
-      moreButton: {
-        tap: 'onMoreButtonTap'
+      venueContainer: {
+        detailedVenueCommand: "onDetailedVenueCommand"
       },
-      venueList: {
-        itemtap: 'onVenueItemTap'
+      venueDetail: {
+        backToVenueListCommand: 'onBackToVenueListCommand'
       }
-    },
-
-    routes: {
-      'show/:id' : 'showItem'
     }
-    
   },
 
-  onVenueItemTap: function() {
-    console.log("VenueItem tap");
+  onBackToVenueListCommand: function() {
+    console.log("onBackToVenueListCommand");
+    Ext.Viewport.animateActiveItem(this.getVenueContainer(), { type: 'slide', direction: 'right'});
   },
 
-  onMoreButtonTap: function(button) {
-    console.log(button);
+  onDetailedVenueCommand: function(list, record) {
+    console.log("onDetailedVenueCommand: " + list);
+    var venueDetail = this.getVenueDetail();
+    Ext.Viewport.animateActiveItem(venueDetail, { type: 'slide', direction: 'left'});
   },
 
   showItem: function(id) {

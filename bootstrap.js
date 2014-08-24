@@ -677,11 +677,11 @@ Ext.ClassManager.addNameAlternateMappings({
   "Lofsdalen.utils.Functions": [],
   "Lofsdalen.view.ContactView": [],
   "Lofsdalen.view.IntroView": [],
-  "Lofsdalen.view.Main": [],
   "Lofsdalen.view.SettingsView": [],
+  "Lofsdalen.view.VenueContainer": [],
   "Lofsdalen.view.VenueDetail": [],
   "Lofsdalen.view.VenueListItem": [],
-  "Lofsdalen.view.VenuesView": []
+  "Lofsdalen.view.VenuesList": []
 });
 
 Ext.ClassManager.addNameAliasMappings({
@@ -1429,17 +1429,19 @@ Ext.ClassManager.addNameAliasMappings({
   "Lofsdalen.view.IntroView": [
     "widget.introview"
   ],
-  "Lofsdalen.view.Main": [
-    "widget.main"
-  ],
   "Lofsdalen.view.SettingsView": [
     "widget.settingsview"
   ],
-  "Lofsdalen.view.VenueDetail": [],
+  "Lofsdalen.view.VenueContainer": [
+    "widget.venuecontainer"
+  ],
+  "Lofsdalen.view.VenueDetail": [
+    "widget.venuedetail"
+  ],
   "Lofsdalen.view.VenueListItem": [
     "widget.venuelistitem"
   ],
-  "Lofsdalen.view.VenuesView": [
+  "Lofsdalen.view.VenuesList": [
     "widget.venueslist"
   ]
 });

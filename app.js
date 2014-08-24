@@ -23,9 +23,9 @@ Ext.application({
     ],
 
     views: [
-        'Main',
-        'VenuesView',
-        'IntroView'
+        'VenueContainer',
+        'VenuesList',
+        'VenueDetail'
     ],
 
     stores: [
@@ -55,7 +55,15 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('Lofsdalen.view.Main', {fullscreen: false}));
+        var venueContainer = {
+          xtype: 'venuecontainer'
+        };
+
+        var venueDetail = {
+          xtype: 'venuedetail'
+        };
+
+        Ext.Viewport.add([venueContainer, venueDetail]);
     },
 
     onUpdated: function() {
