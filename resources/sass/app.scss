@@ -83,6 +83,8 @@ $venue-list-item-bg-color-selected: $selected;
       margin-right: 10px;
       border: 1px solid #eee;
       border-radius: 10px;
+      min-width: 80px;
+      min-height: 80px;
     }
     .venueName {
       font-size: 110%;
