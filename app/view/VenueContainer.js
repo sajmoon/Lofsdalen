@@ -1,8 +1,20 @@
 Ext.define('Lofsdalen.view.VenueContainer', {
-  extend: 'Ext.Container',
+  extend: 'Ext.navigation.View',
   alias: 'widget.venuecontainer',
+  
+  requires: [
+    'Lofsdalen.view.VenuesList',
+    'Lofsdalen.view.VenueDetail'
+  ],
 
-  initialize: function() {
+  config: {
+    items: [
+      {
+        xtype: 'venueslist'
+      }
+    ]
+  },
+  /*initialize: function() {
     this.callParent();
 
     var topToolBar = {
@@ -21,7 +33,7 @@ Ext.define('Lofsdalen.view.VenueContainer', {
 
     this.add([topToolBar, venuesList]);
   },
-
+*/
   onVenueListTap: function(list, record, target, index, evt, options) {
     console.log('VenudeListTap: ' + record);
     //this.fireEvent('detailedVenueCommand', this, record);
@@ -30,11 +42,5 @@ Ext.define('Lofsdalen.view.VenueContainer', {
   onVenueListDisclose: function(list, record, target, index, evt, options) {
     console.log("VenueListDisclose: " + record);
     this.fireEvent('detailedVenueCommand', this, record);
-  },
-
-  config: {
-    layout: {
-      type: 'fit'
-    }
   }
 });

@@ -57,6 +57,16 @@ $venue-list-item-bg-color-selected: $selected;
   }
 }
 
+.venue_detail_header {
+  background-color: white;
+  border-bottom: 1px solid yellow;
+}
+.venue-name {
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+}
+
 .intro-view-panel {
   background: url(http://www.lofsdalen.com/core/images/95/aktiviteter_mernarhet.jpg) no-repeat center center fixed;
   -moz-background-size: cover;

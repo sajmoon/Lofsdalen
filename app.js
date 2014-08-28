@@ -60,7 +60,7 @@ Ext.application({
         };
 
         var venueDetail = {
-          xtype: 'venuedetail'
+            xtype: 'venuedetail'
         };
 
         Ext.Viewport.add([venueContainer, venueDetail]);

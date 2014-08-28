@@ -1,18 +1,13 @@
 Ext.define('Lofsdalen.view.VenuesList', {
   extend: 'Ext.dataview.List',
-  alias: 'widget.venueslist',
+  xtype: 'venueslist',
   
   requires: [
-    'Ext.dataview.NestedList',
     'Ext.List',
     'Ext.Img',
     'Ext.DataView',
     'Lofsdalen.store.Venue'
   ],
-
-  initialize: function() {
-    this.callParent();
-  },
 
   config: {
     defualts: {
@@ -21,8 +16,6 @@ Ext.define('Lofsdalen.view.VenuesList', {
 
     cls: 'venueList',
 
-    onItemDisclosure: true,
-    
     itemTpl:
       '<div class="image">' + 
         '<img src="http://p-hold.com/80" />' +
