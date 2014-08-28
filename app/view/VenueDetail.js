@@ -7,7 +7,7 @@ Ext.define('Lofsdalen.view.VenueDetail', {
   },
 
   require: [
-    'Ext.Carousel'
+    'Ext.carousel.Carousel'
   ],
 
   initialize: function() {
@@ -50,7 +50,7 @@ Ext.define('Lofsdalen.view.VenueDetail', {
       {
         xtype: 'component',
         id: 'categories',
-        tpl: ['<div class="categories"><tpl for="categories"><img class="category-icon" src="{url}"/></tpl></div>']
+        tpl: ['<div class="categories categories-details"><tpl for="categories"><img class="category-icon" src="{url}"/></tpl></div>']
       },
       {
         name: 'name',
@@ -59,11 +59,6 @@ Ext.define('Lofsdalen.view.VenueDetail', {
             '{name}'+
           '</div>'
         ]
-      },
-      {
-        xtype: 'component',
-        name: 'headerimg',
-        tpl: ['header img: {headerimg}']
       },
       {
         xtype: 'component',

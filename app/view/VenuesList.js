@@ -23,7 +23,7 @@ Ext.define('Lofsdalen.view.VenuesList', {
       '<div class="venueName">{name}</div>'+
       '<div class="venueDescription">{shortDesc}</div>' +
       '<div class="see-more-button"></div>'+
-      '<div class="categories"><tpl for="categories"><img class="category-icon" src="{url}"/></tpl></div>',
+      '<div class="categories categories-small"><tpl for="categories"><img class="category-icon" src="{url}"/></tpl></div>',
 
     itemCls: 'venueListItem',
     selectedCls: 'venueListItem-selected',
